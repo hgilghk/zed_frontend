@@ -1,0 +1,104 @@
+/* mobile panel */
+#mobile-side-panel-overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-sidebar {
+    display: none;
+    right: -22rem;
+    transition: all 0.75s ease;
+    opacity: 0;
+}
+
+@media(max-width: 992px) { 
+    #mobile-side-panel-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 990;
+        height: 100%;
+        width: 100%;
+        background-color: #222222;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+
+    .mobile-side-panel {
+        width: 350px;
+        height: 100%;
+        /* background: linear-gradient(270deg, #802BD6 0%, #7462F4 50.18%, #8080FF 100%); */
+        background-color: #802BD6;
+        color: #FFFFFF;
+        position: fixed;
+        z-index: 999;
+        display: block !important;
+        flex-shrink: 0;
+        padding: 50px 30px;
+        top: 0;
+        right: -22rem;
+        transition: all 0.3s;
+    }
+
+    .mobile-side-panel #panel-close {
+        position: absolute;
+        top: 1%;
+        left: 6%;
+        cursor: pointer;
+    }
+
+    .mobile-side-panel .contact-button {
+        width: 100%;
+        color: #FFFFFF;
+        box-shadow: 0px 16px 45px 0px #757E891A;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .mobile-side-panel .navbar-nav {
+        margin-top: 15px !important;
+    }
+
+    .mobile-side-panel .navbar-nav .nav-item {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #FFFFFF44;
+    }
+
+    .mobile-side-panel .navbar-nav .nav-item a {
+        transition: all 0.3s ease;
+    }
+
+    .mobile-side-panel .navbar-nav .nav-item a:hover {
+        color: #FFFFFF !important;
+    }
+
+    .mobile-side-panel .navbar-nav .nav-item .nav-link {
+        color: #FFFFFF;
+    }
+
+    .mobile-side-panel .lobb-company {
+        text-align: center;
+        display: block;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+}
+
+@media (max-width: 567px) {
+    .mobile-side-panel {
+        width: 280px;
+    }
+    .mobile-side-panel .contact-button {
+        height: 50px;
+    }
+}

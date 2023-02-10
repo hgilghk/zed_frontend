@@ -1,0 +1,28 @@
+<svg width="990" height="460" viewBox="0 0 990 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.4">
+<mask id="mask0_1_88248" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-430" y="-459" width="1420" height="919">
+<line x1="-400.17" y1="96.6045" x2="849.724" y2="-382.845" stroke="#772020"/>
+<line x1="-314.214" y1="320.684" x2="935.679" y2="-158.766" stroke="#772020"/>
+<line x1="-280.962" y1="407.372" x2="968.931" y2="-72.0779" stroke="#772020"/>
+<line x1="-428.821" y1="21.9111" x2="821.072" y2="-457.539" stroke="#772020"/>
+<line x1="-351.462" y1="223.583" x2="898.432" y2="-255.867" stroke="#772020"/>
+<line x1="-301.358" y1="354.198" x2="948.536" y2="-125.252" stroke="#772020"/>
+<line x1="-273.346" y1="427.225" x2="976.547" y2="-52.2244" stroke="#772020"/>
+<line x1="-374.383" y1="163.828" x2="875.51" y2="-315.621" stroke="#772020"/>
+<line x1="-331.405" y1="275.868" x2="918.488" y2="-203.582" stroke="#772020"/>
+<line x1="-289.115" y1="386.117" x2="960.778" y2="-93.3328" stroke="#772020"/>
+<line x1="-267.249" y1="443.123" x2="982.644" y2="-36.3272" stroke="#772020"/>
+<line x1="-263.729" y1="452.296" x2="986.164" y2="-27.1541" stroke="#772020"/>
+<line x1="-261.308" y1="458.608" x2="988.585" y2="-20.8414" stroke="#772020"/>
+</mask>
+<g mask="url(#mask0_1_88248)">
+<rect x="-440.008" y="15.6694" width="1355" height="486.637" transform="rotate(-20.9864 -440.008 15.6694)" fill="url(#paint0_linear_1_88248)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_88248" x1="748.399" y1="464.071" x2="-390.231" y2="312.911" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CCCCCC"/>
+<stop offset="0.488766" stop-color="#C2C2C2" stop-opacity="0.69"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,11 @@
+#mobile-sidebar {
+    left: -22rem;
+}
+
+@media(max-width: 991px) { 
+    .mobile-side-panel #panel-close {
+        left: auto;
+        top: 2.5%;
+        right: 8%;
+    }
+}
