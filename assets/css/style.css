@@ -106,12 +106,13 @@ body {
     color: var(--main-light-color) !important;
 }
 
-.short-btn {
+.short-btn,
+.s-btn-2 {
     font-size: var(--font-s);
     font-family: var(--sub-ff-m);
     line-height: var(--line-mxx);
     font-weight: var(--font-w2);
-    padding: 20px 32px;
+    padding: 20px 0;
     width: 148px;
     display: flex;
     justify-content: center;
@@ -121,6 +122,12 @@ body {
 
 .main-header .short-btn:hover {
     color: var(--main-bg-color) !important;
+}
+
+.s-btn-2 {
+    width: 122px;
+    background-color: #FFFFFF24 !important;
+    color: var(--main-light-color) !important;
 }
 
 .large-btn {
@@ -300,7 +307,7 @@ body {
     margin-bottom: 16px;
 }
 
-.customer .us-name {
+.customer .cus-name {
     font-size: var(--font-mx2);
     line-height: var(--line-l);
     font-weight: var(--font-w3);
@@ -794,6 +801,7 @@ body {
 }
 
 .start-business .start-b-desc {
+    max-width: 879.25px;
     font-size: var(--font-mxx);
     line-height: var(--line-m);
     font-weight: var(--font-w1);

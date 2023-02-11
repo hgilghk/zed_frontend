@@ -1,0 +1,158 @@
+:root {
+	--ff-cambay-r: "cambay-r";
+	--ff-cambay-b: "cambay-b";
+	--ff-co-head-r: "co-head-r";
+	--ff-co-head-b: "co-head-b";
+}
+
+@font-face {
+    font-family: "cambay-r";
+    src: url(../fonts/Cambay-Regular.ttf);
+}
+@font-face {
+    font-family: "cambay-b";
+    src: url(../fonts/Cambay-Bold.ttf);
+}
+@font-face {
+	font-family: "co-head-r";
+	src: url(../fonts/co-heading_regular.otf);
+}
+@font-face {
+    font-family: "co-head-b";
+    src: url(../fonts/co-heading_bold.otf);
+}
+
+body {
+	font-family: var(--ff-cambay-r);
+}
+
+.section-title {
+	font-family: var(--ff-co-head-r);
+}
+
+.section-sub-title {
+	font-family: var(--ff-co-head-b);
+	font-weight: var(--font-w2);
+}
+
+.main-header .navbar-nav {
+	font-family: var(--ff-cambay-b);
+}
+
+.header-main-title {
+	font-family: var(--ff-co-head-b);
+	line-height: 60px;
+}
+
+.header-para {
+	font-family: var(--ff-cambay-r);
+}
+
+.short-btn, .large-btn {
+	font-family: var(--ff-cambay-r);
+}
+
+.main-header .header-content .header-img img {
+	margin: 0 0 0 auto;
+}
+.main-header .navbar .menu-btn img {
+	width: 32px;
+	height: 32px;
+	transform: scale(1);
+}
+.main-header .navbar .navbar-nav {
+	width: 410px;
+}
+.lang img {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.customer .customer-comment {
+	margin-right: 0;
+    margin-left: 80px;
+}
+.customer .cus-info {
+	font-family: var(--ff-cambay-b);
+}
+
+.customer .double-qoutes {
+	font-family: var(--main-ff);
+}
+
+.customer .cus-name {
+	font-size: var(--font-mx);
+	line-height: var(--line-l);
+	font-weight: var(--font-w2);
+}
+
+.customer .cus-job {
+	font-size: 16.5px;
+	line-height: var(--line-m2);
+	font-weight: var(--font-w2);
+	margin-bottom: 32px;
+}
+
+.dev-business .dev-box .dev-desc {
+	font-family: var(--ff-cambay-r);
+}
+
+.dev-business .dev-box .know-more-dev {
+	font-family: var(--ff-cambay-r);
+	font-weight: var(--font-w2);
+	margin-left: 0;
+	margin-right: 22px;
+}
+
+.dev-business .dev-box .btn-content img {
+	transform: scale(-1, 1);
+}
+
+.themes .blur-circle {
+	left: auto;
+	right: -80px;
+}
+
+.themes .themes-img img {
+	left: 0;
+}
+
+.themes .large-btn {
+	height: 66px;
+}
+
+.merchant-card .analy-amount {
+	font-family: var(--main-ff);
+}
+
+.success .success-card {
+	height: 322px;
+}
+
+.success .even {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.success .success-card .img-content {
+	left: auto;
+	right: 0;
+	transform: scale(-1, 1);
+}
+
+.start-business .start-b-title {
+	font-family: var(--ff-co-head-b);
+	font-weight: var(--font-w1);
+}
+
+@media (min-width: 1399px) {
+	.customer .container {
+		max-width: 1230px;
+	}
+}
+
+@media (max-width: 1299px) {
+	footer .logo {
+		right: auto;
+		left: 30px;
+	}
+}

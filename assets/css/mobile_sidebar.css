@@ -44,7 +44,7 @@
 
     .mobile-side-panel #panel-close {
         position: absolute;
-        top: 1%;
+        top: 1.2%;
         left: 6%;
         cursor: pointer;
     }
