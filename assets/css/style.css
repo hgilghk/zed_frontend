@@ -244,7 +244,7 @@ body {
 }
 
 .main-header .navbar .navbar-nav {
-    width: 330px;
+    width: 280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1321,7 +1321,7 @@ footer .social-media li {
     }
     .dev-business .dev-box.bg-color-mazeed .dev-img {
         left: -15px;
-        bottom: -95px;
+        bottom: -115px;
     }
     .merchant-card .analy-amount {
         font-size: var(--font-mx);
@@ -1343,4 +1343,28 @@ footer .social-media li {
     footer .footer-sec2 .products .zid-product {
         width: 140px;
     }
+}
+
+/* animation */
+.fade-in-right,
+.fade-in-left,
+.fade-in-bottom,
+.fade-in-top {
+  position: relative;
+  opacity: 0;
+}
+.fade-in-right {
+  right: 60px;
+}
+
+.fade-in-left {
+  left: 60px;
+}
+
+.fade-in-bottom {
+  bottom: 60px;
+}
+
+.fade-in-top {
+  top: 60px;
 }

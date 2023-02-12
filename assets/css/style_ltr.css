@@ -61,7 +61,7 @@ body {
 	transform: scale(1);
 }
 .main-header .navbar .navbar-nav {
-	width: 410px;
+	width: 300px;
 }
 .lang img {
 	margin-right: 0;
@@ -154,5 +154,59 @@ body {
 	footer .logo {
 		right: auto;
 		left: 30px;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.main-header .header-content .header-img img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 991px) {
+	.main-header .header-content .header-img img {
+		margin: 90px auto 0;
+	}
+	.success .even {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+@media (max-width: 767px) {
+	.customer .customer-comment {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 567px) {
+	.success .success-card {
+		height: 430px;
+	}
+	.success .success-card .img-content {
+		width: 225px !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.dev-business .dev-box .dev-img {
+		bottom: -45px;
+		left: -8px;
+	}
+	.dev-business .dev-box.bg-color-slow .dev-img {
+		left: -60px;
+		bottom: -70px;
+	}
+	.dev-business .dev-box.bg-color-market .dev-img {
+		left: -60px;
+		bottom: -50px;
+	}
+	.dev-business .dev-box.bg-color-zidpay .dev-img {
+		left: -45px;
+		bottom: -77px;
+	}
+	.success .success-card {
+		width: 100% !important;
 	}
 }
