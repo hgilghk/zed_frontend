@@ -124,8 +124,12 @@ body {
 	font-family: var(--main-ff);
 }
 
+.merchant-card .milion {
+	font-family: var(--main-ff);
+}
+
 .success .success-card {
-	height: 322px;
+	height: 348px;
 }
 
 .success .even {
@@ -137,6 +141,17 @@ body {
 	left: auto;
 	right: 0;
 	transform: scale(-1, 1);
+}
+
+.success .success-title {
+	font-family: var(--ff-co-head-r);
+	font-weight: var(--font-w1);
+	margin-bottom: 20px;
+}
+
+.success .success-desc {
+	font-family: var(--ff-cambay-r);
+	margin-bottom: 0;
 }
 
 .start-business .start-b-title {

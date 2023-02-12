@@ -811,7 +811,7 @@ body {
     max-width: 372px;
 }
 .success .success-card .img-content.img-4 {
-    max-width: 246px;
+    max-width: 290px;
 }
 
 .success .success-card .img-content img {
@@ -1146,6 +1146,9 @@ footer .social-media li {
     .bootcast .section-desc {
         max-width: 100%;
     }
+    .bootcast .bootcast-img {
+        max-width: 800px;
+    }
     .bootcast .bootcast-img img {
         position: relative;
         width: 100%;
@@ -1340,6 +1343,9 @@ footer .social-media li {
     }
     footer .footer-sec3 .social-media {
         margin: 17px auto 0;
+    }
+    .success .success-card .img-content.img-4 {
+        max-width: 245px;
     }
 }
 
