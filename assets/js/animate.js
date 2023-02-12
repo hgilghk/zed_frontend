@@ -3,7 +3,7 @@ const animateLeft = {left: 0, opacity: 0.9};
 const animateRight = {right: 0, opacity: 0.9};
 const animateTop = {top: 0, opacity: 0.9};
 const animateBottom = {bottom: 0, opacity: 0.9};
-const dimention = 200;
+const dimention = 300;
 
 // header animation
 var header = "#header",

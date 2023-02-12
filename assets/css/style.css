@@ -282,6 +282,7 @@ body {
 
 .main-header .header-content .header-img img {
     margin: 0 auto 0 0;
+    width: 100%;
 }
 
 .main-header .header-btn-1 {
@@ -304,7 +305,13 @@ body {
 }
 
 .customer .cus-info .cus-img {
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
+    width: 150px;
+    height: 150px;
+}
+
+.customer .cus-info .cus-img img {
+    width: 100%;
 }
 
 .customer .cus-name {
@@ -375,12 +382,17 @@ body {
     height: 62px;
 }
 
+.dev-business .dev-box.bg-color-zid .dev-img {
+    max-width: 430px;
+}
+
 .dev-business .dev-box.bg-color-slow {
     background-color: #F8F7F8;
     color: var(--main-dark-color);
 }
 
 .dev-business .dev-box.bg-color-slow .dev-img {
+    max-width: 479.14px;
     left: -145px;
     bottom: -125px;
 }
@@ -393,6 +405,10 @@ body {
     background: #F8F7F8;
     box-shadow: 0px 32px 64px -12px #10182814;
     color: var(--main-dark-color);
+}
+
+.dev-business .dev-box.bg-color-market .dev-img {
+    max-width: 510px;
 }
 
 .dev-business .dev-box.bg-color-market .dev-desc,
@@ -413,6 +429,7 @@ body {
 }
 
 .dev-business .dev-box.bg-color-zidpay .dev-img {
+    max-width: 370px;
     left: -130px;
     bottom: -85px;
     box-shadow: 0px 4px 48px -16px #0000001F;
@@ -426,6 +443,7 @@ body {
 }
 
 .dev-business .dev-box.bg-color-zidship .dev-img {
+    max-width: 444.95px;
     left: -100px;
     bottom: -90px;
 }
@@ -437,6 +455,7 @@ body {
 }
 
 .dev-business .dev-box.bg-color-mazeed .dev-img {
+    max-width: 400px;
     left: -50px;
     bottom: -140px;
 }
@@ -477,6 +496,10 @@ body {
     position: absolute;
     bottom: -50px;
     left: -75px;
+}
+
+.dev-business .dev-box .dev-img img {
+    width: 100%;
 }
 
 .dev-business .dev-box .btn-content {
@@ -534,6 +557,14 @@ body {
     filter: blur(130px);
     -webkit-filter: blur(130px);
     border-radius: 50%;
+}
+
+.themes .theme-img {
+    max-width: 900px;
+}
+
+.themes .theme-img img {
+    width: 100%;
 }
 
 .themes .themes-img img {
@@ -635,7 +666,7 @@ body {
 
 /* zid services section */
 .services {
-    background-image: url(../img/service_bg.webp);
+    background-image: url(../img/service_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 275px 0;
@@ -685,6 +716,14 @@ body {
     margin-bottom: 50px;
 }
 
+.bootcast .person-content .person-img {
+    width: 64px;
+}
+
+.bootcast .person-content .person-img img {
+    width: 100%;
+}
+
 .bootcast .person-name {
     font-size: var(--font-s);
     line-height: var(--line-mxx);
@@ -712,10 +751,13 @@ body {
 }
 
 .bootcast .bootcast-img {
+    max-width: 582px;
+    bottom: 75px;
     position: relative;
 }
 
 .bootcast .bootcast-img img {
+    width: 130%;
     position: absolute;
     left: -85px;
     top: 60px;
@@ -753,14 +795,27 @@ body {
     linear-gradient(0deg, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.23));
 }
 
-.success .success-card .large-img {
-    width: 280px;
-}
-
 .success .success-card .img-content {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.success .success-card .img-content.img-1 {
+    max-width: 310px;
+}
+.success .success-card .img-content.img-2 {
+    max-width: 450px;
+}
+.success .success-card .img-content.img-3 {
+    max-width: 372px;
+}
+.success .success-card .img-content.img-4 {
+    max-width: 246px;
+}
+
+.success .success-card .img-content img {
+    width: 100%;
 }
 
 .success .success-card .success-icon {
@@ -956,9 +1011,6 @@ footer .social-media li {
 }
 
 @media (max-width: 1199px) {
-    .bootcast .bootcast-img img {
-        width: 130%;
-    }
     .success .success-card {
         width: 460px;
         height: 250px;
@@ -967,14 +1019,20 @@ footer .social-media li {
         width: 8%;
     }
     .success .success-card .img-content {
-        width: 215px !important;
-    }
-    .success .success-card .img-content img {
-        width: 100%;
+        width: auto;
     }
     .success .success-card .success-desc {
         font-size: var(--font-sx);
         max-width: 218px;
+    }
+    .success .success-card .img-content.img-1 {
+        max-width: 260px;
+    }
+    .success .success-card .img-content.img-2 {
+        max-width: 350px;
+    }
+    .success .success-card .img-content.img-3 {
+        max-width: 300px;
     }
 }
 
@@ -1179,12 +1237,6 @@ footer .social-media li {
         height: 265px;
         margin: 17px auto;
     }
-    .success .success-card .img-content {
-        width: 280px !important;
-    }
-    .success .success-card .img-content.large-img {
-        width: 255px !important;
-    }
     footer .footer-sec2 .products .zid-product {
         width: 115px;
     }
@@ -1241,7 +1293,7 @@ footer .social-media li {
     }
     .success .success-card {
         width: 355px;
-        height: 420px;
+        height: 370px;
     }
     .success .large-btn {
         margin: 0 auto;
@@ -1321,7 +1373,7 @@ footer .social-media li {
     }
     .dev-business .dev-box.bg-color-mazeed .dev-img {
         left: -15px;
-        bottom: -115px;
+        bottom: -120px;
     }
     .merchant-card .analy-amount {
         font-size: var(--font-mx);
@@ -1338,7 +1390,7 @@ footer .social-media li {
         margin-top: 55px;
     }
     .success .success-card {
-        width: 340px;
+        width: 100%;
     }
     footer .footer-sec2 .products .zid-product {
         width: 140px;
