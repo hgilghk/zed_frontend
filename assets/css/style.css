@@ -213,13 +213,38 @@ body {
 .main-header {
     background: linear-gradient(270deg, #802BD6 0%, #7462F4 50.18%, #8080FF 100%);
     color: var(--main-light-color);
-    padding-bottom: 200px;
+    padding-bottom: 380px;
     font-family: var(--sub-ff-sb);
+    position: relative;
+}
+
+.main-header .header-img1,
+.main-header .header-img2 {
+    position: absolute;
+}
+
+.main-header .header-img1 img,
+.main-header .header-img2 img {
+    width: 100%;
+}
+
+.main-header .header-img1 {
+    z-index: 5;
+    width: 888px;
+    left: -190px;
+    top: -155px;
+}
+
+.main-header .header-img2 {
+	width: 965px;
+	left: -50px;
+	bottom: 75px;
+	z-index: 9;
 }
 
 .main-header .navbar {
     padding-top: 18px;
-    margin-bottom: 130px;
+    margin-bottom: 280px;
 }
 
 .main-header .navbar .navbar-brand {
@@ -244,6 +269,7 @@ body {
 }
 
 .main-header .navbar .navbar-nav {
+    margin-top: 13px;
     width: 280px;
     display: flex;
     align-items: center;
@@ -268,6 +294,8 @@ body {
 .lang {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .line-space {
@@ -310,8 +338,14 @@ body {
     height: 150px;
 }
 
-.customer .cus-info .cus-img img {
+.customer .cus-info img {
     width: 100%;
+}
+
+.customer .cus-info .palma-logo {
+    margin: 0 auto;
+    width: 112px;
+    height: 42px
 }
 
 .customer .cus-name {
@@ -391,10 +425,18 @@ body {
     color: var(--main-dark-color);
 }
 
+.dev-business .dev-box.bg-color-slow .dev-logo {
+    width: 189px;
+}
+
 .dev-business .dev-box.bg-color-slow .dev-img {
     max-width: 479.14px;
     left: -145px;
     bottom: -125px;
+}
+
+.dev-business .dev-box.bg-color-slow .dev-logo img {
+    width: 100%;
 }
 
 .dev-business .dev-box.bg-color-slow .know-more-dev {
@@ -465,7 +507,7 @@ body {
     height: 495px;
     width: 519px;
     border-radius: 8px;
-    padding: 40px;
+    padding: 30px 35px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -523,6 +565,7 @@ body {
 .themes #carousel-themes {
     z-index: 10;
     position: absolute;
+    width: 800px;
 }
 
 .themes #carousel-themes button {
@@ -543,6 +586,7 @@ body {
 
 .themes .themes-img {
     position: relative;
+    top: -20px;
 }
 
 .themes .blur-circle {
@@ -579,20 +623,20 @@ body {
 
 .themes .carousel-dots {
     position: relative;
-    width: 45px;
-    height: 11px;
     margin-top: 14px;
     display: flex;
-    justify-content: space-between;
 }
 
 .themes .carousel-dots .dot {
-    width: 11px;
-    height: 11px;
+    width: 11px !important;
+    height: 11px !important;
+    list-style: none;
+    margin-left: 5px;
     border-radius: 50%;
     background-color: var(--main-bg-light-color) !important;
     outline: none;
     border: 0;
+    cursor: pointer;
 }
 
 .themes .carousel-dots .dot.active {
@@ -987,6 +1031,13 @@ footer .social-media li {
     }
 }
 
+@media (max-width: 1499px) {
+    .main-header .header-img2 {
+        width: 860px;
+        bottom: 95px;
+    }
+}
+
 @media (max-width: 1399px) {
     .dev-business .dev-box.bg-color-market .dev-img {
         left: -95px;
@@ -996,7 +1047,13 @@ footer .social-media li {
     }
 }
 
-@media (max-width: 1299px) {    
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .main-header .header-img2 {
+        width: 795px;
+    }
+}
+
+@media (max-width: 1299px) {   
     .themes .themes-img img {
         width: 100%;
     }
@@ -1011,6 +1068,11 @@ footer .social-media li {
 }
 
 @media (max-width: 1199px) {
+    .main-header .header-img2 {
+        width: 640px;
+        bottom: 200px;
+        left: -80px;
+    } 
     .success .success-card {
         width: 460px;
         height: 250px;
@@ -1071,13 +1133,30 @@ footer .social-media li {
         bottom: -110px;
     }
     .themes .themes-img img {
-        width: 115%;
+        width: 600px;
         left: 50px;
         top: 30px;
     }
 }
 
 @media (max-width: 992px) {
+    .main-header {
+        padding-bottom: 150px;
+    }
+    /* .main-header .header-img1 {
+        width: 777px;
+        left: -310px;
+        top: -210px;
+    } */
+    .main-header .header-img1 {
+        display: none;
+    }
+    .main-header .header-img2 {
+        display: none;
+    }
+    .main-header .navbar {
+        margin-bottom: 100px;
+    }
     #carousel-themes {
         position: relative !important;
     }
@@ -1100,8 +1179,12 @@ footer .social-media li {
     .themes {
         padding: 175px 0;
     }
+    .themes #carousel-themes {
+        width: 700px;
+    }
     .themes .themes-img {
         margin-top: 85px;
+        top: 0;
     }
     .themes .themes-img img {
         left: 5%;
@@ -1141,7 +1224,7 @@ footer .social-media li {
         padding: 175px 0;
     }
     .bootcast {
-        padding: 175px 0;
+        padding: 175px 0 0;
     }
     .bootcast .section-desc {
         max-width: 100%;
@@ -1154,7 +1237,7 @@ footer .social-media li {
         width: 100%;
         left: 0;
         top: 0;
-        margin-top: 80px;
+        margin-top: 110px;
     }
     footer .footer-sec2 .products .zid-product {
         width: 155px;
@@ -1165,15 +1248,22 @@ footer .social-media li {
 }
 
 @media (max-width: 767px) {
+    /* .main-header .header-img1 {
+        width: 666px;
+        left: -300px;
+        top: -170px;
+    } */
     .section-sub-title {
         font-size: var(--font-l);
+    }
+    .customer .cus-info .palma-logo {
+        margin-bottom: 10px;
     }
     .customer .customer-comment {
         margin-right: 0;
         margin-top: 50px;
         text-align: center;
     }
-
     .dev-business .dev-box {
         height: 429px;
         width: 450px;
@@ -1204,6 +1294,9 @@ footer .social-media li {
         left: -35px;
         bottom: -110px;
     }
+    .themes #carousel-themes {
+        width: 100%;
+    }
     .themes .themes-img img {
         width: 115%;
         left: 50px;
@@ -1233,7 +1326,7 @@ footer .social-media li {
         line-height: var(--line-mxx);
     }
     .bootcast {
-        padding: 150px 0 100px;
+        padding: 150px 0 20px;
     }
     .success .success-card {
         width: 520px;
@@ -1255,11 +1348,13 @@ footer .social-media li {
 }
 
 @media (max-width: 576px) {
+    /* .main-header .header-img1 {
+        width: 565px;
+        left: -243px;
+        top: -192px;
+    } */
     .section-sub-title {
         font-size: var(--font-m);
-    }
-    .main-header {
-        padding-bottom: 100px;
     }
     .header-main-title {
         font-size: var(--font-l);
@@ -1292,7 +1387,7 @@ footer .social-media li {
         grid-column-gap: 0;
     }
     .bootcast {
-        padding: 100px 0 75px;
+        padding: 100px 0 0;
     }
     .success .success-card {
         width: 355px;
@@ -1358,16 +1453,16 @@ footer .social-media li {
         margin-left: 17px;
     }
     .dev-business .dev-box .dev-img {
-        bottom: -25px;
+        bottom: -60px;
         left: -8px;
     }
     .dev-business .dev-box.bg-color-slow .dev-img {
         left: -40px;
-        bottom: -50px;
+        bottom: -60px;
     }
     .dev-business .dev-box.bg-color-market .dev-img {
         left: -22px;
-        bottom: -40px;
+        bottom: -75px;
     }
     .dev-business .dev-box.bg-color-zidpay .dev-img {
         left: -25px;
@@ -1378,8 +1473,8 @@ footer .social-media li {
         bottom: -60px;
     }
     .dev-business .dev-box.bg-color-mazeed .dev-img {
-        left: -15px;
-        bottom: -120px;
+        left: -25px;
+        bottom: -115px;
     }
     .merchant-card .analy-amount {
         font-size: var(--font-mx);

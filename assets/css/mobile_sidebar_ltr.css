@@ -5,7 +5,7 @@
 @media(max-width: 991px) { 
     .mobile-side-panel #panel-close {
         left: auto;
-        top: 25px;
-        right: 23px;
+        top: 30px;
+        right: 25px;
     }
 }

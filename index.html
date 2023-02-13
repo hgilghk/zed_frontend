@@ -12,6 +12,12 @@
 </head>
 <body dir="rtl">
     <header class="main-header">
+        <div class="header-img1">
+            <img src="./assets/img/header-img1.png" alt="image">
+        </div>
+        <div class="header-img2">
+            <img src="./assets/img/header-img2.png" alt="image">
+        </div>
         <div class="container">
 
             <!-- Nav bar -->
@@ -47,16 +53,11 @@
             <div class="header-content" id="header">
                 <div class="container-fluid g-sm-0">
                     <div class="row align-items-center g-sm-0">
-                        <div class="col-lg-6">
+                        <div class="col-12">
                             <div class="header-desc fade-in-left">
                                 <h1 class="header-title header-main-title main-ff mb-1">كل تجارتك في مكان واحد</h1>
                                 <p class="header-para header-sub-title mb-4">جميع احتياجاتك لإدارة تجارتك في مكان واحد ومنصة واحدة.</p>
                                 <a href="https://web.zid.sa/register?_ga=2.50486700.460718372.1676138763-196452786.1675800746&_gac=1.53569882.1676213780.CjwKCAiAlp2fBhBPEiwA2Q10D_sqAF6H6B_Rpy2ktStc_I_p4QQH60o84o7EQcQLaow05hP-OAi_-hoCHrEQAvD_BwE" class="header-btn-1 short-btn">ابدأ الآن مجاناً</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="header-img d-flex fade-in-right">
-                                <img src="./assets/img/header-img.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -70,13 +71,15 @@
         <section class="customer">
             <div class="container">
                 <div class="customer-content">
-                    <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
-                        <div class="mx-auto me-md-0 offset-xl-1 offset-xxl-2">
+                    <div class="d-flex align-items-center flex-wrap flex-md-nowrap justify-content-center">
+                        <div>
                             <div class="cus-info">
                                 <div class="cus-img"><img src="./assets/img/custom.png" alt="person image"></div>
                                 <h4 class="cus-name">عبدالله الربدي</h4>
                                 <p class="cus-job">صاحب متجر بالما لبيع التمور</p>
-                                <img src="./assets/img/svg/palma.svg" alt="logo" class="cus-img">
+                                <div class="palma-logo">
+                                    <img src="./assets/img/palma.png" alt="logo">
+                                </div>
                             </div>
                         </div>
                         <div class="customer-comment">
@@ -219,9 +222,9 @@
                             <p class="section-desc">تميز متجر قرمز بثيمه الأنيق وأبرز منتجاته بلمسته الخاصة</p>
                             <a href="https://web.zid.sa/register?_ga=2.50486700.460718372.1676138763-196452786.1675800746&_gac=1.53569882.1676213780.CjwKCAiAlp2fBhBPEiwA2Q10D_sqAF6H6B_Rpy2ktStc_I_p4QQH60o84o7EQcQLaow05hP-OAi_-hoCHrEQAvD_BwE" class="short-btn short-btn-main-bg">ابدأ الآن مجاناً</a>
                             <div class="carousel-dots">
-                                <button class="dot active" type="button" data-bs-target="#carousel-themes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button class="dot" type="button" data-bs-target="#carousel-themes" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button class="dot" type="button" data-bs-target="#carousel-themes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <li class="dot active" data-bs-target="#carousel-themes" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></li>
+                                <li class="dot" data-bs-target="#carousel-themes" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                                <li class="dot" data-bs-target="#carousel-themes" data-bs-slide-to="2" aria-label="Slide 3"></li>
                             </div>
                         </div>
                     </div>
@@ -237,12 +240,12 @@
                                 </div>
                                 <div class="carousel-item">
                                       <div class="theme-img">
-                                          <img src="./assets/img/themes_img.png" alt="image">
+                                          <img src="./assets/img/themes_img2.png" alt="image">
                                       </div>
                                     </div>
                                     <div class="carousel-item">
                                       <div class="theme-img">
-                                          <img src="./assets/img/themes_img.png" alt="image">
+                                          <img src="./assets/img/themes_img3.png" alt="image">
                                       </div>
                                   </div>
                                 </div>
@@ -309,7 +312,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 d-flex order-1 order-lg-2 mb-5 mb-lg-0">
-                            <div class="themes-img me-0 ms-auto">
+                            <div class="themes-img mx-auto me-lg-0 ms-lg-auto">
                                 <img src="./assets/img/svg/zid_business.svg" alt="image">
                             </div>
                         </div>
@@ -413,15 +416,13 @@
                         </div>
                     </div>
                 </div>
-
-                <a href="https://grow.zid.sa/zid-sales?_ga=2.154962749.460718372.1676138763-196452786.1675800746&_gac=1.249801204.1676217524.CjwKCAiAuaKfBhBtEiwAht6H79U1zoXd1YqCe9eDhiNSPJ6LACoIUhDfME0koTRE5eYQkZKE-LWd_hoCJYsQAvD_BwE" class="large-btn short-btn-main-bg">تواصل مع فريق المبيعات</a>
             </div>
         </section>
 
         <section class="start-business text-center">
             <div class="container">
                 <div class="cont">
-                    <h2 class="start-b-title">ابدأ تجارك الآن مع التجزئة الحديثة</h2>
+                    <h2 class="start-b-title">ابدأ تجارتك الآن مع التجزئة الحديثة</h2>
                     <p class="start-b-desc">نوفر خدماتك متكاملة لنمو تجارتك: الربط مع شركات الشحن، تفعيل بوابات الدفع الإلكترونية، الربط مع التطبيقات لأتمتة المهام من لوحة تحكم واحدة. زد مجتمع متكامل لتبادل الخبرات ونصائح التجار بمختلف قطاعات التجارة الإلكترونية.</p>
                     <a href="https://web.zid.sa/register?_ga=2.50486700.460718372.1676138763-196452786.1675800746&_gac=1.53569882.1676213780.CjwKCAiAlp2fBhBPEiwA2Q10D_sqAF6H6B_Rpy2ktStc_I_p4QQH60o84o7EQcQLaow05hP-OAi_-hoCHrEQAvD_BwE" class="short-btn short-btn-main-bg">ابدأ الآن مجاناً</a>
                 </div>
@@ -558,9 +559,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://zid.sa/pricing/">الباقات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">المقارنات</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://blog.zid.sa/?_ga=2.58869933.1829500394.1676147103-685289124.1676147103&_gac=1.50506331.1676147297.CjwKCAiAlp2fBhBPEiwA2Q10D_sqAF6H6B_Rpy2ktStc_I_p4QQH60o84o7EQcQLaow05hP-OAi_-hoCHrEQAvD_BwE">المدونة</a>
