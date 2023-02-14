@@ -35,6 +35,14 @@ body {
 	font-weight: var(--font-w2);
 }
 
+.section-hent {
+	font-family: var(--ff-cambay-b);
+}
+
+.section-desc {
+	font-family: var(--ff-cambay-r);
+}
+
 .main-header .navbar-nav {
 	font-family: var(--ff-cambay-b);
 }
@@ -114,7 +122,11 @@ body {
 	font-family: var(--ff-cambay-r);
 	font-weight: var(--font-w2);
 	margin-left: 0;
-	margin-right: 22px;
+	margin-right: 12px;
+}
+
+.dev-business .dev-box .dev-title {
+	font-family: var(--ff-cambay-b);
 }
 
 .dev-business .dev-box .btn-content img {
@@ -135,11 +147,25 @@ body {
 }
 
 .merchant-card .analy-amount {
-	font-family: var(--main-ff);
+	font-family: var(--main-ff-b);
+	font-weight: var(--font-w2);
+	
 }
 
 .merchant-card .milion {
 	font-family: var(--main-ff);
+}
+
+.bootcast .section-desc {
+	max-width: 400px;
+}
+
+.bootcast .person-name {
+	font-family: var(--ff-cambay-b);
+}
+
+.bootcast .person-job {
+	font-family: var(--ff-cambay-r);
 }
 
 .success .success-card {
@@ -171,6 +197,11 @@ body {
 .start-business .start-b-title {
 	font-family: var(--ff-co-head-b);
 	font-weight: var(--font-w1);
+}
+
+footer .footer-list-title,
+footer .zid-product-title {
+	font-family: var(--ff-co-head-b);
 }
 
 @media (min-width: 1399px) {
