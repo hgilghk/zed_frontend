@@ -1,56 +1,65 @@
 var lang = document.getElementsByTagName("html")[0].getAttribute("lang");
-var themes_section_title = document.querySelectorAll(".themes .section-desc")[0];
-var themes_section_hent = document.querySelectorAll(".themes .section-hent")[0];
+var themeHent = document.querySelectorAll(".themes .theme-hent")[0];
+var themeDesc = document.querySelectorAll(".themes .theme-desc")[0];
+var cDir = true;
 
-if (lang == "ar") {
-    var themes_hent = [
-        "ثيم مخصص",
-        "ثيم مخصص",
-        "إشراق"
-    ];
-    var themes_desc = [
-        "تميز متجر قرمز بثيمه الأنيق وأبرز منتجاته بلمسته الخاصة",
-        "في عالم العسل لافييت من ابرز العلامات، ومتجره مخصص على ذوقه الخاص من الصفر",
-        "متجر بالقلم يميز اقلام عملائه ببصمته الخاصة"
-    ];
-} else if (lang == "En") {
-    var themes_hent = [
-        "Elegant Theme",
-        "Custom Theme",
-        "Shine"
-    ];
-    var themes_desc = [
-        "Qormuz has distinguished by its elegant theme and highlighted its products with its own unique touch",
-        "In the world of honey, Lafayette is one of the most prominent brands, and his shop is dedicated to his own style from scratch",
-        "A bilqalam a store that distinguishes the pens of its customers with its own mark"
-    ];
-}
-
-var dot = document.querySelectorAll(".dot");
-
-// Init
-function checkCarousel() {
-    for (var i = 0; i < $(".themes .dot").length; i++) {
-        if (dot[i].classList.contains("active")) {
-            themes_section_title.textContent = themes_desc[i];
-            themes_section_hent.textContent = themes_hent[i];
-        }
-    }
-}
+if (lang == "En") {
+    cDir = false;
+} else if (lang == "ar") {
+    cDir = true;
+} 
 
 $(document).ready(function() {
 
-    checkCarousel();
-
-    // Change carousel indecators active
-    $(".themes .dot").on("click", function() {
-        $(".dot").removeClass("active");
-        $(this).addClass("active");
-        checkCarousel();
+    $('#carousel-themes').owlCarousel({
+        loop:true,
+        margin:10,
+        rtl: cDir,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
     });
 
-    $("#carousel-themes").on("slid", () => {
-        console.log("0");
-        checkCarousel();
-    })
+    getActiveSlideIndex = function (event) {
+        if (!event.item) {
+            return null;
+        }
+
+        var count  = event.item.count,
+            offset = Math.floor((count + 1) / 2),
+            index  = event.item.index;
+
+        if (index > 0) {
+            index -= offset;
+        }
+        if (index >= count) {
+            index -= count;
+        }
+        if (index < 0) {
+            index = count - 1;
+        }
+        if (count === 2) {
+            index = index === 0 ? 1 : 0;
+        }
+
+        var n = 0;
+
+        if (document.querySelectorAll(".owl-item").length < 8) {
+            n = 2;
+        } else {
+            n = document.querySelectorAll(".owl-item").length / 4;
+        }
+        
+        // can't use float number this is why I used ceil
+        var newIndex = index + Math.ceil( n );
+        themeHent.textContent = event.target.getElementsByClassName("owl-item")[newIndex].children[0].children[1].textContent;
+        themeDesc.textContent = event.target.getElementsByClassName("owl-item")[newIndex].children[0].children[2].textContent;
+    }
+    
+    // When carousel change
+    $('#carousel-themes').on("changed.owl.carousel", getActiveSlideIndex);
+
+
 });

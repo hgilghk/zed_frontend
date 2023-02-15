@@ -567,7 +567,7 @@ body {
 /* themes section */
 .themes {
     background-color: #C5C5F0;
-    padding: 245px 0 210px;
+    padding: 242px 0 277px;
 }
 
 .themes #carousel-themes {
@@ -578,6 +578,23 @@ body {
 
 .themes #carousel-themes button {
     cursor: pointer;
+}
+
+#carousel-themes .owl-dots {
+	width: 100px;
+	margin: -122px -520px 0 0;
+}
+
+#carousel-themes .owl-dot span {
+    background-color: var(--main-bg-light-color);
+    margin: 0 5px 0 0;
+    opacity: 1;
+    width: 11px;
+    height: 11px;
+}
+
+#carousel-themes .owl-dot.active span {
+    background-color: var(--main-bg-color);
 }
 
 .themes .section-title {
@@ -622,14 +639,19 @@ body {
 .themes .themes-img img {
     position: relative;
     z-index: 5;
-    left: 7%;
+    left: 8%;
 }
 
 .themes .short-btn {
-    margin-top: 44px;
+    margin-top: 5px;
 }
 
-.themes .carousel-dots {
+.themes .section-desc {
+    height: 72px;
+    margin-bottom: 0;
+}
+
+/* .themes .carousel-dots {
     position: relative;
     margin-top: 14px;
     display: flex;
@@ -649,7 +671,7 @@ body {
 
 .themes .carousel-dots .dot.active {
     background-color: var(--main-bg-color) !important;
-}
+} */
 
 /* merchant analy section */
 .merchants {
@@ -1055,6 +1077,9 @@ footer .social-media li {
     .success .success-card {
         width: 545px;
     }
+    #carousel-themes .owl-dots {
+        margin: -122px -505px 0 0;
+    }
 }
 
 @media (max-width: 1399px) and (min-width: 1200px) {
@@ -1106,6 +1131,9 @@ footer .social-media li {
     .success .success-card .img-content.img-3 {
         max-width: 300px;
     }
+    #carousel-themes .owl-dots {
+        margin: -6px -508px 0 0;
+    }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -1144,7 +1172,7 @@ footer .social-media li {
     }
     .themes .themes-img img {
         width: 600px;
-        left: 50px;
+        left: 75px;
         top: 30px;
     }
 }
@@ -1188,6 +1216,10 @@ footer .social-media li {
     }
     .themes {
         padding: 175px 0;
+    }
+    .themes .section-desc {
+        height: auto;
+        margin-bottom: 14px;
     }
     .themes #carousel-themes {
         width: 700px;
@@ -1255,6 +1287,12 @@ footer .social-media li {
     footer .products.pro-2 {
         max-width: 500px;
     }
+    #carousel-themes .owl-dots {
+        margin: 0;
+        position: absolute;
+        top: -80px;
+        right: -25px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1309,7 +1347,7 @@ footer .social-media li {
     }
     .themes .themes-img img {
         width: 115%;
-        left: 50px;
+        left: 80px;
         top: 30px;
     }
     .merchants-analy-top {
@@ -1380,6 +1418,11 @@ footer .social-media li {
     .comment-title {
         font-size: var(--font-mx3);
         line-height: var(--line-lx);
+    }
+    .themes .themes-img img {
+        width: 100%;
+        left: 5%;
+        top: 0;
     }
     .merchants .merchants-analy-top {
         grid-template-columns: repeat(2, 1fr) !important;
@@ -1485,6 +1528,10 @@ footer .social-media li {
     .dev-business .dev-box.bg-color-mazeed .dev-img {
         left: -25px;
         bottom: -115px;
+    }
+    .themes .themes-img img {
+        width: 110%;
+        left: 12%;
     }
     .merchant-card .analy-amount {
         font-size: var(--font-mx);
