@@ -1,0 +1,31 @@
+Path_Animations.png
+size:1811,1697
+filter:Linear,Linear
+pma:true
+Ellipse 6
+bounds:1046,688,112,112
+offsets:2,2,116,116
+Frame 142151
+bounds:1246,91,408,409
+offsets:40,33,490,490
+rotate:90
+Frame 142189
+bounds:2,2,801,798
+offsets:70,60,932,928
+Group 3
+bounds:805,571,229,239
+offsets:26,22,276,276
+rotate:90
+Group 5
+bounds:805,60,439,439
+offsets:88,85,615,615
+Vector 3
+bounds:2,802,893,1201
+offsets:121,199,1014,1404
+rotate:90
+hotjar_logo
+bounds:1205,1082,604,613
+offsets:94,86,793,792
+unnamed
+bounds:1205,501,573,579
+offsets:97,87,761,761

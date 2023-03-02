@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mobile_sidebar.css">
+
+    <!-- animation -->
+    <script src="./dist/javaPlayer.js"></script>
+    <link rel="stylesheet" href="./dist/cssPlayer.css">
+
     <title>انشئ متجر الكتروني وابدأ رحلتك مع التجارة الالكترونية - زد</title>
 </head>
 <body dir="rtl">
@@ -132,8 +137,19 @@
                                 <a href="https://solutions.zid.sa/" class="know-more-dev">إعرف أكثر</a>
                                 <img src="./assets/img/svg/dev_arrow_main.svg" alt="arrow">
                             </div>
-                            <div class="dev-img">
-                                <img src="./assets/img/Apple_Set2.png" alt="image">
+                            <div class="draw-animation-content">
+                                <!-- <img src="./assets/img/Apple_Set2.png" alt="image"> -->
+                                <div id="draw-animation" class="animation"></div>
+                                <script>
+                                    new java.JavaPlayer("draw-animation", {
+                                    jsonUrl: "./assets/animations/Drawing_Animation.json",
+                                    atlasUrl: "./assets/animations/Drawing_Animation.atlas",
+                                    animation: "animation",
+                                    alpha: true,
+                                    backgroundColor: "#00000000",
+                                    showControls: false
+                                });
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -188,6 +204,17 @@
                             </div>
                             <div class="dev-img">
                                 <img src="./assets/img/zid_ship_img.png" alt="image">
+                                <!-- <div id="path-animation" class="animation"></div>
+                                <script>
+                                    new java.JavaPlayer("path-animation", {
+                                    jsonUrl: "./assets/animations/Path_Animations.json",
+                                    atlasUrl: "./assets/animations/Path_Animations.atlas",
+                                    animation: "animation",
+                                    alpha: true,
+                                    backgroundColor: "#00000000",
+                                    showControls: false
+                                });
+                                </script> -->
                             </div>
                         </div>
                     </div>
