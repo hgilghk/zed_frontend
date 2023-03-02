@@ -1056,6 +1056,14 @@ footer .social-media li {
     top: 23%;
 }
 
+.path-animation-content {
+	pointer-events: none;
+	position: absolute;
+	width: 240%;
+	left: -90%;
+	top: 0%;
+}
+
 /* Media */
 @media (min-width: 1399px) {
     .container {
@@ -1183,6 +1191,18 @@ footer .social-media li {
         width: 600px;
         left: 75px;
         top: 30px;
+    }
+
+    /* animation */
+    .draw-animation-content {
+        width: 170%;
+        left: -52%;
+        top: 33%;
+    }
+    .path-animation-content {
+        width: 190%;
+        left: -70%;
+        top: 20%;
     }
 }
 
@@ -1402,6 +1422,13 @@ footer .social-media li {
     footer .footer-list {
         margin-top: 15px;
     }
+
+    /* animation */
+    .path-animation-content {
+        width: 220%;
+        left: -85%;
+        top: 7%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1510,6 +1537,11 @@ footer .social-media li {
         left: -38%;
         top: 40%;
     }
+    .path-animation-content {
+        width: 850px;
+        left: -315px;
+        top: 80px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1568,9 +1600,17 @@ footer .social-media li {
     footer .footer-sec2 .products .zid-product {
         width: 140px;
     }
+
+    /* animation */
     .draw-animation-content {
-        width: 150%;
-        top: 55%;
+        top: 210px;
+        width: 575px;
+        left: -150px;
+    }
+    .path-animation-content {
+        width: 700px;
+        left: -245px;
+        top: 150px;
     }
 }
 

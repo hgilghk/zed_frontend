@@ -323,4 +323,15 @@ footer .zid-product-title {
 	.themes .themes-img img {
 		right: 0;
 	}
+	/* animation */
+	.draw-animation-content {
+		top: 215px;
+		width: 550px;
+		left: -140px;
+	}
+	.path-animation-content {
+		width: 630px;
+		left: -225px;
+		top: 185px;
+	}
 }

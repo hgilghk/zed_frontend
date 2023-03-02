@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../assets/css/style_ltr.css">
     <link rel="stylesheet" href="../assets/css/mobile_sidebar.css">
     <link rel="stylesheet" href="../assets/css/mobile_sidebar_ltr.css">
+    <!-- animation -->
+    <script src="../dist/javaPlayer.js"></script>
+    <link rel="stylesheet" href="../dist/cssPlayer.css">
     <title>Home - Zid</title>
 </head>
 <body>
@@ -133,7 +136,20 @@
                                 <img src="../assets/img/svg/dev_arrow_main.svg" alt="arrow">
                                 <a href="https://solutions.zid.sa/en/" class="know-more-dev">Know more</a>
                             </div>
-                            <img class="dev-img" src="../assets/img/Apple_Set2.png" alt="image">
+                            <!-- <img class="dev-img" src="../assets/img/Apple_Set2.png" alt="image"> -->
+                            <div class="draw-animation-content">
+                                <div id="draw-animation" class="animation"></div>
+                                <script>
+                                    new java.JavaPlayer("draw-animation", {
+                                    jsonUrl: "../assets/animations/Drawing_Animation.json",
+                                    atlasUrl: "../assets/animations/Drawing_Animation.atlas",
+                                    animation: "animation",
+                                    alpha: true,
+                                    backgroundColor: "#00000000",
+                                    showControls: false
+                                });
+                                </script>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 box fade-in-left">
@@ -182,7 +198,20 @@
                                 <img src="../assets/img/svg/dev_arrow_dark.svg" alt="arrow">
                                 <a href="https://grow.zid.sa/zidship?_ga=2.86790045.460718372.1676138763-196452786.1675800746&_gac=1.216321636.1676216204.CjwKCAiAlp2fBhBPEiwA2Q10D_sqAF6H6B_Rpy2ktStc_I_p4QQH60o84o7EQcQLaow05hP-OAi_-hoCHrEQAvD_BwE" class="know-more-dev">Know more</a>
                             </div>
-                            <img class="dev-img" src="../assets/img/zid_ship_img.png" alt="image">
+                            <!-- <img class="dev-img" src="../assets/img/zid_ship_img.png" alt="image"> -->
+                            <div class="path-animation-content">
+                                <div id="path-animation" class="animation"></div>
+                                <script>
+                                    new java.JavaPlayer("path-animation", {
+                                    jsonUrl: "../assets/animations/Path_Animations.json",
+                                    atlasUrl: "../assets/animations/Path_Animations.atlas",
+                                    animation: "animation",
+                                    alpha: true,
+                                    backgroundColor: "#00000000",
+                                    showControls: false
+                                });
+                                </script>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 box fade-in-right">
