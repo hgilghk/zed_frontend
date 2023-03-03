@@ -213,6 +213,12 @@ footer .zid-product-title {
 	font-family: var(--ff-co-head-b);
 }
 
+/* animation */
+.main-header .horvring-objects-content {
+	left: auto;
+	right: -340px;
+}
+
 @media (min-width: 1399px) {
 	.customer .container {
 		max-width: 1230px;
@@ -233,6 +239,10 @@ footer .zid-product-title {
 		right: auto;
 		left: 30px;
 	}
+	/* animation */
+	.main-header .horvring-objects-content {
+		right: -24%;
+	}
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -244,6 +254,11 @@ footer .zid-product-title {
 @media (max-width: 1199px) {
 	.themes #carousel-themes .owl-dots {
 		margin: 94px 0 0 -503px;
+	}
+	/* animation */
+	.main-header .horvring-objects-content {
+		right: -23%;
+		width: 95%;
 	}
 }
 

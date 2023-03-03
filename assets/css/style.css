@@ -1063,6 +1063,14 @@ footer .social-media li {
 	left: -90%;
 	top: 0%;
 }
+.main-header .horvring-objects-content {
+    position: absolute;
+    pointer-events: none;
+    z-index: 50;
+    width: 1420px;
+    left: -335px;
+    bottom: 120px;
+}
 
 /* Media */
 @media (min-width: 1399px) {
@@ -1116,6 +1124,11 @@ footer .social-media li {
         position: relative;
         top: -50px;
         right: 30px;
+    }
+    .main-header .horvring-objects-content {
+        width: 95%;
+        left: -24%;
+        bottom: 18%;
     }
 }
 
@@ -1321,6 +1334,11 @@ footer .social-media li {
         position: absolute;
         top: -80px;
         right: -25px;
+    }
+
+    /* animation */
+    .main-header .horvring-objects-content {
+        display: none;
     }
 }
 
